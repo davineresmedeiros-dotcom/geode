@@ -221,7 +221,7 @@ bool ModList::init(ModListSource* src, CCSize const& size, bool searchingDev) {
     searchBG->setID("search-id");
     m_searchMenu->addChildAtPosition(searchBG, Anchor::Center);
 
-    m_searchInput = TextInput::create(size.width - 5, "Search Mods");
+    m_searchInput = TextInput::create(size.width - 5, "Search Geode Mods");
     m_searchInput->setID("search-input");
     m_searchInput->setScale(.75f);
     m_searchInput->setAnchorPoint({ 0, .5f });
@@ -708,7 +708,7 @@ void ModList::gotoPage(size_t page, bool update) {
 
     if (!m_source->isLocalModsOnly()) {
         // Start loading new page with generic loading message
-        this->showStatus(ModListUnkProgressStatus(), "Loading...");
+        this->showStatus(ModListUnkProgressStatus(), "Loading Geode mods...");
     }
 
     // TODO: v5 maybe refactor this system?
