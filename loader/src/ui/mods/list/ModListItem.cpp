@@ -6,7 +6,7 @@ bool ModListItem::init() {
         
     m_bg = NineSlice::create("square02b_small.png");
     m_bg->setID("bg");
-    m_bg->setOpacity(0);
+    m_bg->setOpacity(28);
     m_bg->ignoreAnchorPointForPosition(false);
     m_bg->setAnchorPoint({ .5f, .5f });
     m_bg->setScale(.7f);
