@@ -542,10 +542,10 @@ bool ModsLayer::init() {
     mainTabs->setTouchPriority(-150);
 
     for (auto item : std::initializer_list<std::tuple<const char*, const char*, ModListSource*, const char*, bool>> {
-        { "download.png"_spr, "Installed", InstalledModListSource::get(InstalledModListType::All), "installed-button", false },
+        { "download.png"_spr, "My Mods", InstalledModListSource::get(InstalledModListType::All), "installed-button", false },
         { "GJ_starsIcon_001.png", "Featured", ServerModListSource::get(ServerModListType::Featured), "featured-button", false },
-        { "globe.png"_spr, "Download", ServerModListSource::get(ServerModListType::Download), "download-button", false },
-        { "GJ_timeIcon_001.png", "Recent", ServerModListSource::get(ServerModListType::Recent), "recent-button", false },
+        { "globe.png"_spr, "Browse", ServerModListSource::get(ServerModListType::Download), "download-button", false },
+        { "GJ_timeIcon_001.png", "Latest", ServerModListSource::get(ServerModListType::Recent), "recent-button", false },
     }) {
         auto btn = CCMenuItemSpriteExtra::create(
             GeodeTabSprite::create(std::get<0>(item), std::get<1>(item), 100, std::get<4>(item)),
