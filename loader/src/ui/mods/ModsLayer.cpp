@@ -772,7 +772,7 @@ void ModsLayer::updateState() {
         auto total = m_currentSource->getItemCount().value();
 
         // Set the page count string
-        m_pageLabel->setText(fmt::format("Page {}/{} (Total {})", page, count, total));
+        m_pageLabel->setText(fmt::format("GEODE | PAGE {}/{} | {} MODS", page, count, total));
 
         // Make page menu visible
         m_pageMenu->setVisible(true);
